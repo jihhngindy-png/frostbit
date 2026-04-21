@@ -105,6 +105,17 @@ Don't worry about "breaking" anything. To start over from block 0: stop `dex.exe
 
 ## 3. Release Package Layout & Startup
 
+### Download the release
+
+1. Open the Releases page: **<https://github.com/jihhngindy-png/frostbit/releases>**
+2. Pick the top release (`v0.1`, `v0.2`, … higher number = newer). In the **Assets** section, click `dex-vX.Y-windows-amd64.zip` to download
+3. **Extract** the zip to disk (e.g. `D:\dex`). You should get a `dex` directory whose layout is described below
+4. All subsequent steps use this extracted `dex` directory as the working directory
+
+> 💡 Only **Windows 10/11 64-bit** is supported. macOS / Linux prebuilt packages are not provided in the current version.
+>
+> 💡 When upgrading to a new version, always **extract into a fresh empty directory** rather than overlaying on top of an old one. Old `data\` / `explorer_data\` may be incompatible with the new build — see [3.6 Start a fresh chain](#6-start-a-fresh-chain-optional).
+
 ### Release package structure
 
 ```
